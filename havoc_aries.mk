@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/aries/aries.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mokee/config/common_mini_phone.mk)
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/config/common_mini_phone.mk)
 
-PRODUCT_NAME := mokee_aries
+PRODUCT_NAME := havoc_aries
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Xiaomi
@@ -41,3 +41,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="aries-userdebug 6.0.1 MMB29M 6.3.22 test-keys"
 
 BUILD_FINGERPRINT := Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
+
+# Havoc
+export export HAVOC_BUILD_TYPE=Official
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=kyoto44
