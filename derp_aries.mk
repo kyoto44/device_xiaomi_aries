@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
 
-+# DerpFest Customs
+# DerpFest Customs
 DERP_BUILDTYPE := Official
 
 # GApps targets
