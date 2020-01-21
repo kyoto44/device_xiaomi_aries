@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/aries/aries.mk)
 # Inherit some common DerpFest stuff.
 $(call inherit-product, vendor/aosip/config/common_mini_phone.mk)
 
-PRODUCT_NAME := havoc_aries
+PRODUCT_NAME := derp_aries
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Xiaomi
