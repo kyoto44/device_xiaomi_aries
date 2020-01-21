@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/aries/aries.mk)
 
-# Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_mini_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/aosip/config/common_mini_phone.mk)
 
 PRODUCT_NAME := havoc_aries
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -42,5 +42,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=kyoto44
++# DerpFest Customs
+DERP_BUILDTYPE := Official
+
+# GApps targets
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+CURRENT_BUILD_TYPE := nogapps

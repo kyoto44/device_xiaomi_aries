@@ -14,4 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_aries.mk
+    $(LOCAL_DIR)/derp_aries.mk
+
+COMMON_LUNCH_CHOICES := \
+	derp_aries-userdebug
