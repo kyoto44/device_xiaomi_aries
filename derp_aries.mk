@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/aries/aries.mk)
 
 # Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/aosip/config/common_mini_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 PRODUCT_NAME := derp_aries
 PRODUCT_CHARACTERISTICS := nosdcard
