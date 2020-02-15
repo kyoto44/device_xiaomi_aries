@@ -42,5 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
 
+# Havoc
+export export HAVOC_BUILD_TYPE=Official
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.maintainer=kyoto44
